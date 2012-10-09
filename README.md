@@ -13,6 +13,7 @@ http://www.ietf.org/rfc/rfc1929.txt
 -
 
 v0.01 - 2012.10.07
-===
+-------
 implement tcp proxy in socks v5
 
+implemnet http proxy
