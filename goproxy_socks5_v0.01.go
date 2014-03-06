@@ -115,7 +115,7 @@ func (msg *reqMsg) read(conn net.Conn) (err error) {
 	//	log.Println(err)
 	//	return
 	//}
-	msg.dst_port2 = uint16((msg.dst_port[0] << 8) + msg.dst_port[1])
+	msg.dst_port2 = (uint16(msg.dst_port[0]) << 8) + uint16(msg.dst_port[1])
 
 	switch msg.cmd {
 	case 1:
